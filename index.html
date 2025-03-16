@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伊江島マラソン2025 - 友達グループの旅</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo', sans-serif;
+        }
+        
+        body {
+            background-color: #f0f8ff;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background-color: #0066cc;
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+            background-image: linear-gradient(rgba(0,102,204,0.8), rgba(0,102,204,0.8)), url('/api/placeholder/1200/400');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+        }
+        
+        section {
+            padding: 40px 0;
+        }
+        
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #0066cc;
+            border-bottom: 3px solid #0066cc;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+        
+        .section-title {
+            text-align: center;
+            width: 100%;
+            margin-bottom: 40px;
+        }
+        
+        .schedule {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+        
+        .schedule-item {
+            display: flex;
+            margin-bottom: 15px;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 15px;
+        }
+        
+        .schedule-date {
+            width: 120px;
+            font-weight: bold;
+            color: #0066cc;
+        }
+        
+        .schedule-time {
+            width: 100px;
+            font-weight: bold;
+        }
+        
+        .members {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+        
+        .member-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            width: 220px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .member-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .member-photo {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+        
+        .member-info {
+            padding: 15px;
+            text-align: center;
+        }
+        
+        .member-info h3 {
+            margin-bottom: 5px;
+            color: #0066cc;
+        }
+        
+        .member-info p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        .map-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        footer {
+            background-color: #0066cc;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            .schedule-item {
+                flex-direction: column;
+            }
+            
+            .schedule-date, .schedule-time {
+                width: 100%;
+                margin-bottom: 5px;
+            }
+            
+            .members {
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>伊江島マラソン2025</h1>
+            <p>友達5人で挑む伊江島の旅</p>
+        </div>
+    </header>
+    
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>旅の予定</h2>
+            </div>
+            
+            <div class="schedule">
+                <div class="schedule-item">
+                    <div class="schedule-date">2025年4月5日</div>
+                    <div class="schedule-time">08:00</div>
+                    <div class="schedule-detail">那覇空港集合</div>
+                </div>
+                
+                <div class="schedule-item">
+                    <div class="schedule-date">2025年4月5日</div>
+                    <div class="schedule-time">10:00</div>
+                    <div class="schedule-detail">本部港へ移動</div>
+                </div>
+                
+                <div class="schedule-item">
+                    <div class="schedule-date">2025年4月5日</div>
+                    <div class="schedule-time">11:30</div>
+                    <div class="schedule-detail">フェリーで伊江島へ</div>
+                </div>
+                
+                <div class="schedule-item">
+                    <div class="schedule-date">2025年4月5日</div>
+                    <div class="schedule-time">12:30</div>
+                    <div class="schedule-detail">伊江島到着・ホテルチェックイン</div>
+                </div>
+                
+                <div class="schedule-item">
+                    <div class="schedule-date">2025年4月5日</div>
+                    <div class="schedule-time">14:00</div>
+                    <div class="schedule-detail">ゼッケン受け取り・島内観光</div>
+                </div>
+                
+                <div class="schedule-item">
+                    <div class="schedule-date">2025年4月5日</div>
+                    <div class="schedule-time">18:00</div>
+                    <div class="schedule-detail">夕食・ミーティング</div>
+                </div>
+                
+                <div class="schedule-item">
+                    <div class="schedule-date">2025年4月6日</div>
+                    <div class="schedule-time">06:00</div>
+                    <div class="schedule-detail">起床・朝食</div>
+                </div>
+                
+                <div class="schedule-item">
+                    <div class="schedule-date">2025年4月6日</div>
+                    <div class="schedule-time">08:30</div>
+                    <div class="schedule-detail">マラソン会場へ移動</div>
+                </div>
+                
+                <div class="schedule-item">
+                    <div class="schedule-date">2025年4月6日</div>
+                    <div class="schedule-time">09:30</div>
+                    <div class="schedule-detail">マラソンスタート</div>
+                </div>
+                
+                <div class="schedule-item">
+                    <div class="schedule-date">2025年4月6日</div>
+                    <div class="schedule-time">14:00</div>
+                    <div class="schedule-detail">完走祝い・昼食</div>
+                </div>
+                
+                <div class="schedule-item">
+                    <div class="schedule-date">2025年4月6日</div>
+                    <div class="schedule-time">16:30</div>
+                    <div class="schedule-detail">フェリーで本部港へ</div>
+                </div>
+                
+                <div class="schedule-item">
+                    <div class="schedule-date">2025年4月6日</div>
+                    <div class="schedule-time">18:30</div>
+                    <div class="schedule-detail">那覇市内で打ち上げパーティー</div>
+                </div>
+                
+                <div class="schedule-item">
+                    <div class="schedule-date">2025年4月7日</div>
+                    <div class="schedule-time">終日</div>
+                    <div class="schedule-detail">自由行動・沖縄観光</div>
+                </div>
+            </div>
+            
+            <div class="map-container">
+                <h3>伊江島マラソンコースマップ</h3>
+                <img src="/api/placeholder/800/400" alt="伊江島マラソンコースマップ" style="max-width: 100%; border-radius: 8px; margin-top: 10px;">
+            </div>
+        </div>
+    </section>
+    
+    <section style="background-color: #e6f2ff;">
+        <div class="container">
+            <div class="section-title">
+                <h2>参加メンバー</h2>
+            </div>
+            
+            <div class="members">
+                <div class="member-card">
+                    <img src="/api/placeholder/220/220" alt="メンバー1の写真" class="member-photo">
+                    <div class="member-info">
+                        <h3>田中 太郎</h3>
+                        <p>目標タイム: 3時間30分</p>
+                        <p>一言: 伊江島の自然を楽しみながら走りたい！</p>
+                    </div>
+                </div>
+                
+                <div class="member-card">
+                    <img src="/api/placeholder/220/220" alt="メンバー2の写真" class="member-photo">
+                    <div class="member-info">
+                        <h3>佐藤 花子</h3>
+                        <p>目標タイム: 4時間00分</p>
+                        <p>一言: 初マラソン！完走目指します！</p>
+                    </div>
+                </div>
+                
+                <div class="member-card">
+                    <img src="/api/placeholder/220/220" alt="メンバー3の写真" class="member-photo">
+                    <div class="member-info">
+                        <h3>鈴木 健太</h3>
+                        <p>目標タイム: 3時間45分</p>
+                        <p>一言: 沖縄の青い海を見ながら走るのが夢でした！</p>
+                    </div>
+                </div>
+                
+                <div class="member-card">
+                    <img src="/api/placeholder/220/220" alt="メンバー4の写真" class="member-photo">
+                    <div class="member-info">
+                        <h3>高橋 美咲</h3>
+                        <p>目標タイム: 4時間15分</p>
+                        <p>一言: 友達と一緒に頑張ります！</p>
+                    </div>
+                </div>
+                
+                <div class="member-card">
+                    <img src="/api/placeholder/220/220" alt="メンバー5の写真" class="member-photo">
+                    <div class="member-info">
+                        <h3>伊藤 大輔</h3>
+                        <p>目標タイム: 3時間15分</p>
+                        <p>一言: 自己ベスト更新を目指します！</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>© 2025 伊江島マラソン友達グループ</p>
+            <p>最終更新日: 2025年3月16日</p>
+        </div>
+    </footer>
+</body>
+</html>
